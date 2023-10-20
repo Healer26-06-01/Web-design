@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tài khoản – Blue Mô Hình</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://xemohinh.co/favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="script/javascripts.js"></script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="row">
+            <div class="left">
+                <a href="https://www.google.com/maps/place/153+Nguy%E1%BB%85n+Ti%E1%BB%83u+La,+ph%C6%B0%E1%BB%9Dng+8,+Qu%E1%BA%ADn+10,+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam/@10.7640018,106.6640174,17z/data=!3m1!4b1!4m5!3m4!1s0x31752ee675cb4e07:0x701e593affc3c5c4!8m2!3d10.7639965!4d106.6662114?shorturl=1">
+                    <img src="Images/icon-map.png"> 153/20 Nguyễn Tiểu La, P.5, Quận 10
+                </a>
+                <span>|</span>
+                <a href="#">
+                    <img src="Images/icon-phone.png" alt="" /> 090 168 27 59
+                </a>
+            </div>
+            <div class="right">
+                <a href="taikhoan.html">Đăng Nhập</a>
+                <span>|</span>
+                <a href="taikhoan.html">Đăng Ký</a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="top-head bg-black">
+        <div class="row">
+            <div class="edit2">
+                <div class="edit1">
+                    <a href="Index.html"><img id="img1" src="Images/logo.svg" alt="" /></a>
+                </div>
+                <div class="edit1">
+                    <input type="search" class="khung-search" placeholder="tìm theo tên xe, hãng xe...">
+                </div>
+            </div>
+            <div class="edit2" id="edit3">
+                <div class="edit1">
+                    <a href="ktdh.html">
+                        <img class="img2" src="Images/icon-ktr-donhang.png" alt="" />
+                        <span>Kiểm tra đơn hàng</span>
+                    </a>
+                </div>
+                <div class="edit1">
+                    <a href="taikhoan.html">
+                        <img class="img2" src="Images/icon-tk.png" alt="" />
+                        <span>Tài khoản</span>
+                    </a>
+                </div>
+                <div class="edit1">
+                    <a href="giohang.html">
+                        <img class="img2" src="Images/icon-giohang.png" alt="" />
+                        <span>Giỏ hàng</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bg6">
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <ul id="edit17">
+            <li><a class="edit18" href="#">XE MÔ HÌNH</a></li>
+            <li><a class="edit18" href="https://xemohinh.co/shop/">HÀNG MỚI VỀ</a></li>
+            <li><a class="edit18" href="https://xemohinh.co/loai-xe/moto/">MÔ TÔ</a></li>
+            <li><a class="edit18" href="https://xemohinh.co/loai-xe/xe-dieu-khien-rc/">XE ĐIỀU KHIỂN</a></li>
+            <li><a class="edit18" href="https://xemohinh.co/loai-xe/truck/">XE ĐẦU KÉO</a></li>
+            <li><a class="edit18" href="lovecar.html">LOVE CAR</a></li>
+        </ul>
+    </div>
+    <div class="bg7">
+        <h1>Tài khoản</h1>
+        <div id="bg9">
+            <div id="hienLoi"></div>
+            <div class="chung2">
+                <h2>Đăng nhập</h2>
+                <div class="bg10">
+                    <form action="#">
+                        <label>Tên tài khoản hoặc địa chỉ email <span>*</span></label><br>
+                        <input id="tk" type="text" required><br><br />
+                        <label>Mật khẩu <span>*</span></label><br>
+                        <input type="password" required/>
+                        <input class="nut" type="submit" value="Đăng nhập" onClick="checkDN();" />
+                        <label>Ghi nhớ mật khẩu</label><br />
+                        <a href="https://xemohinh.co/tai-khoan/lost-password/">Quên mật khẩu?</a>
+                    </form>
+                </div>
+            </div>
+            <div class="chung2" id="edit18">
+                <h2>Đăng ký</h2>
+                <div class="bg10">
+                    <form action="#">
+                        <label>Địa chỉ email <span>*</span></label><br>
+                        <input id="email" type="email" required><br><br />
+                        <label>Mật khẩu <span>*</span></label><br>
+                        <input id="mk" type="password" required /><br><br />
+                        <label>Xác nhận mật khẩu <span>*</span></label><br>
+                        <input id="nl_mk" type="password" required />
+                        <input class="nut" type="submit" value="Đăng ký" onClick="checkDK();" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bg5">
+        <ul id="edit13">
+            <li>
+                <ul>
+                    <li class="edit14">
+                        <a href="https://xemohinh.co/#">GIỜ MỞ CỬA</a>
+                    </li>
+                    <li>
+                        <a href="https://xemohinh.co/#">Thứ 2 – Thứ 5: 9h-20h</a>
+                    </li>
+                    <li>
+                        <a href="https://xemohinh.co/#">Thứ 6-7-CN: 9h-17h</a>
+                    </li>
+                    <li>
+                        <a href="tel:+84901682759">Hotline: 090 168 27 59</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <ul>
+                    <li class="edit14">
+                        <a href="https://xemohinh.co/#">LIÊN HỆ BLUE MÔ HÌNH</a>
+                    </li>
+                    <li>
+                        <img src="Images/logo-map.png">
+                        <a href="https://goo.gl/maps/eh9DsosiWjH2" target="_blank">153/20 Nguyễn Tiểu La,
+                                    <br>
+                                    &emsp;&emsp;P.5, Q.10, Tp.HCM
+                                    <br>
+                                    <span id="edit15">&emsp;&emsp;(Xem trên Google Maps)</span>
+                                </a>
+                    </li>
+                    <li>
+                        <img src="Images/logo-email.png">
+                        <a href="bluemohinh@gmail.com">Email: bluemohinh@gmail.com</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="edit14">
+                        <a href="https://xemohinh.co/#">HỖ TRỢ KHÁCH HÀNG</a>
+                    </li>
+                    <li>
+                        <a href="https://xemohinh.co/huong-dan-dat-hang/">Hướng dẫn đặt hàng
+                                </a>
+                    </li>
+                    <li>
+                        <a href="https://xemohinh.co/cau-hoi-thuong-gap/">Câu hỏi thường gặp</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="edit14">
+                        <a href="https://xemohinh.co/#">QUY ĐỊNH</a>
+                    </li>
+                    <li>
+                        <a href="https://xemohinh.co/chinh-sach-bao-mat/">Chính sách bảo mật
+                                </a>
+                    </li>
+                    <li>
+                        <a href="https://xemohinh.co/chinh-sach-doi-tra/">Chính sách đổi trả</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="bg2-1">
+        <div class="edit7">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FBluemohinh%2F&tabs=timeline&width=510&height=80&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="495" height="80"
+                style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="edit7">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhoidammesieuxe%2F&tabs=timeline&width=510&height=80&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="495" height="80"
+                style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+    <div id="edit16">
+        <p class="text-center">
+            <small>
+                        ©2017 - Bản quyền thuộc về BLUE MÔ HÌNH.
+                    <br>
+                        Website đang hoạt động thử nghiệm chờ đăng ký với Bộ Công Thương.
+                    </small>
+        </p>
+    </div>
+</body>
+
+</html>
